@@ -348,7 +348,7 @@ cd Worker
 ## Contributors
 
 - **Sanif Ali Momin** - Developer and Contributor
-- **Mostafaa Abdelaziz** - Developer and Contributor
+- **Tarun Chauhan** - Developer and Contributor
 
 ---
 

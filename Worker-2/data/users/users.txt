@@ -1,0 +1,2 @@
+admin|21232f297a57a5a743894a0e4a801fc3|null|null|true|true
+coordinator_worker2|5f4dcc3b5aa765d61d8327deb882cf99|What is your favorite color?|2d8bd7d9bb5f85ba643f0110d50cb506|true|false

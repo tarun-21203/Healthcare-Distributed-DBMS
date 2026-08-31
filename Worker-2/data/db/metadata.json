@@ -1,0 +1,504 @@
+{
+  "database": {
+    "health_care_distributed_db": {
+      "tables": {
+        "insurance": {
+          "name": "insurance",
+          "columns": [
+            {
+              "name": "insurance_id",
+              "type": "INT"
+            },
+            {
+              "name": "patient_id",
+              "type": "INT"
+            },
+            {
+              "name": "provider_id",
+              "type": "INT"
+            },
+            {
+              "name": "insurance_type",
+              "type": "STRING"
+            },
+            {
+              "name": "policy_no",
+              "type": "STRING"
+            },
+            {
+              "name": "expiry_date",
+              "type": "STRING"
+            }
+          ],
+          "totalRowCount": 0
+        },
+        "medicaltest": {
+          "name": "medicaltest",
+          "columns": [
+            {
+              "name": "test_id",
+              "type": "INT"
+            },
+            {
+              "name": "test_name",
+              "type": "STRING"
+            },
+            {
+              "name": "test_type",
+              "type": "STRING"
+            },
+            {
+              "name": "description",
+              "type": "STRING"
+            },
+            {
+              "name": "duration",
+              "type": "INT"
+            }
+          ],
+          "totalRowCount": 0
+        },
+        "medicalrecord": {
+          "name": "medicalrecord",
+          "columns": [
+            {
+              "name": "record_id",
+              "type": "INT"
+            },
+            {
+              "name": "patient_id",
+              "type": "INT"
+            },
+            {
+              "name": "record_date",
+              "type": "STRING"
+            },
+            {
+              "name": "record_type",
+              "type": "STRING"
+            },
+            {
+              "name": "description",
+              "type": "STRING"
+            }
+          ],
+          "totalRowCount": 0
+        },
+        "medicine": {
+          "name": "medicine",
+          "columns": [
+            {
+              "name": "medicine_id",
+              "type": "INT"
+            },
+            {
+              "name": "medicine_name",
+              "type": "STRING"
+            },
+            {
+              "name": "medicine_expiry",
+              "type": "STRING"
+            }
+          ],
+          "totalRowCount": 0
+        },
+        "employeetest": {
+          "name": "employeetest",
+          "columns": [
+            {
+              "name": "test_id",
+              "type": "INT"
+            },
+            {
+              "name": "emp_id",
+              "type": "INT"
+            },
+            {
+              "name": "medical_test_id",
+              "type": "INT"
+            },
+            {
+              "name": "test_date",
+              "type": "STRING"
+            },
+            {
+              "name": "result",
+              "type": "STRING"
+            }
+          ],
+          "totalRowCount": 0
+        },
+        "appointment": {
+          "name": "appointment",
+          "columns": [
+            {
+              "name": "apt_id",
+              "type": "INT"
+            },
+            {
+              "name": "patient_id",
+              "type": "INT"
+            },
+            {
+              "name": "dept_id",
+              "type": "INT"
+            },
+            {
+              "name": "doctor_id",
+              "type": "INT"
+            },
+            {
+              "name": "apt_date",
+              "type": "STRING"
+            },
+            {
+              "name": "apt_time",
+              "type": "STRING"
+            },
+            {
+              "name": "apt_status",
+              "type": "STRING"
+            },
+            {
+              "name": "apt_type",
+              "type": "STRING"
+            }
+          ],
+          "totalRowCount": 0
+        },
+        "technician": {
+          "name": "technician",
+          "columns": [
+            {
+              "name": "emp_id",
+              "type": "INT"
+            },
+            {
+              "name": "role",
+              "type": "STRING"
+            },
+            {
+              "name": "specialty",
+              "type": "STRING"
+            }
+          ],
+          "totalRowCount": 0
+        },
+        "inventory": {
+          "name": "inventory",
+          "columns": [
+            {
+              "name": "inventory_id",
+              "type": "INT"
+            },
+            {
+              "name": "pharmacy_id",
+              "type": "INT"
+            },
+            {
+              "name": "medicine_id",
+              "type": "INT"
+            },
+            {
+              "name": "supplier_id",
+              "type": "INT"
+            },
+            {
+              "name": "quantity",
+              "type": "INT"
+            },
+            {
+              "name": "supply_date",
+              "type": "STRING"
+            }
+          ],
+          "totalRowCount": 0
+        },
+        "patienttest": {
+          "name": "patienttest",
+          "columns": [
+            {
+              "name": "patient_test_id",
+              "type": "INT"
+            },
+            {
+              "name": "patient_id",
+              "type": "INT"
+            },
+            {
+              "name": "test_id",
+              "type": "INT"
+            },
+            {
+              "name": "test_date",
+              "type": "STRING"
+            },
+            {
+              "name": "result",
+              "type": "STRING"
+            },
+            {
+              "name": "notes",
+              "type": "STRING"
+            }
+          ],
+          "totalRowCount": 0
+        },
+        "insuranceprovider": {
+          "name": "insuranceprovider",
+          "columns": [
+            {
+              "name": "provider_id",
+              "type": "INT"
+            },
+            {
+              "name": "provider_name",
+              "type": "STRING"
+            },
+            {
+              "name": "provider_address",
+              "type": "STRING"
+            }
+          ],
+          "totalRowCount": 0
+        },
+        "laboratory": {
+          "name": "laboratory",
+          "columns": [
+            {
+              "name": "laboratory_id",
+              "type": "INT"
+            },
+            {
+              "name": "facility_id",
+              "type": "INT"
+            },
+            {
+              "name": "laboratory_name",
+              "type": "STRING"
+            }
+          ],
+          "totalRowCount": 0
+        },
+        "prescription": {
+          "name": "prescription",
+          "columns": [
+            {
+              "name": "prescription_id",
+              "type": "INT"
+            },
+            {
+              "name": "record_id",
+              "type": "INT"
+            },
+            {
+              "name": "prescription_date",
+              "type": "STRING"
+            }
+          ],
+          "totalRowCount": 0
+        },
+        "medicalequipment": {
+          "name": "medicalequipment",
+          "columns": [
+            {
+              "name": "equip_id",
+              "type": "INT"
+            },
+            {
+              "name": "dept_id",
+              "type": "INT"
+            },
+            {
+              "name": "supplier_id",
+              "type": "INT"
+            },
+            {
+              "name": "equip_name",
+              "type": "STRING"
+            },
+            {
+              "name": "equip_type",
+              "type": "STRING"
+            }
+          ],
+          "totalRowCount": 0
+        },
+        "patient": {
+          "name": "patient",
+          "columns": [
+            {
+              "name": "patient_id",
+              "type": "INT"
+            },
+            {
+              "name": "patient_name",
+              "type": "STRING"
+            },
+            {
+              "name": "gender",
+              "type": "STRING"
+            },
+            {
+              "name": "dob",
+              "type": "STRING"
+            },
+            {
+              "name": "contact_no",
+              "type": "STRING"
+            }
+          ],
+          "totalRowCount": 0
+        },
+        "supplier": {
+          "name": "supplier",
+          "columns": [
+            {
+              "name": "supplier_id",
+              "type": "INT"
+            },
+            {
+              "name": "supplier_name",
+              "type": "STRING"
+            },
+            {
+              "name": "supplier_contact",
+              "type": "STRING"
+            }
+          ],
+          "totalRowCount": 0
+        },
+        "pharmacy": {
+          "name": "pharmacy",
+          "columns": [
+            {
+              "name": "pharmacy_id",
+              "type": "INT"
+            },
+            {
+              "name": "facility_id",
+              "type": "INT"
+            },
+            {
+              "name": "pharmacy_name",
+              "type": "STRING"
+            },
+            {
+              "name": "pharmacy_type",
+              "type": "STRING"
+            }
+          ],
+          "totalRowCount": 0
+        },
+        "invoice": {
+          "name": "invoice",
+          "columns": [
+            {
+              "name": "invoice_id",
+              "type": "INT"
+            },
+            {
+              "name": "appointment_id",
+              "type": "INT"
+            },
+            {
+              "name": "amount",
+              "type": "INT"
+            },
+            {
+              "name": "date",
+              "type": "STRING"
+            },
+            {
+              "name": "invoice_type",
+              "type": "STRING"
+            }
+          ],
+          "totalRowCount": 0
+        },
+        "invoicemedicine": {
+          "name": "invoicemedicine",
+          "columns": [
+            {
+              "name": "invoicemed_id",
+              "type": "INT"
+            },
+            {
+              "name": "invoice_id",
+              "type": "INT"
+            },
+            {
+              "name": "medicine_id",
+              "type": "INT"
+            },
+            {
+              "name": "quantity",
+              "type": "INT"
+            }
+          ],
+          "totalRowCount": 0
+        },
+        "prescribemedicine": {
+          "name": "prescribemedicine",
+          "columns": [
+            {
+              "name": "prescribemed_id",
+              "type": "INT"
+            },
+            {
+              "name": "prescription_id",
+              "type": "INT"
+            },
+            {
+              "name": "medicine_id",
+              "type": "INT"
+            },
+            {
+              "name": "dosage",
+              "type": "STRING"
+            },
+            {
+              "name": "duration",
+              "type": "STRING"
+            },
+            {
+              "name": "frequency",
+              "type": "STRING"
+            }
+          ],
+          "totalRowCount": 0
+        },
+        "claim": {
+          "name": "claim",
+          "columns": [
+            {
+              "name": "claim_id",
+              "type": "INT"
+            },
+            {
+              "name": "insurance_id",
+              "type": "INT"
+            },
+            {
+              "name": "surgery_id",
+              "type": "INT"
+            },
+            {
+              "name": "claim_status",
+              "type": "STRING"
+            },
+            {
+              "name": "claim_amount",
+              "type": "INT"
+            },
+            {
+              "name": "claim_date",
+              "type": "STRING"
+            }
+          ],
+          "totalRowCount": 0
+        }
+      }
+    }
+  }
+}
